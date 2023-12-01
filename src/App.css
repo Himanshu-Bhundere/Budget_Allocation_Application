@@ -1,10 +1,91 @@
-header{
-  margin: 1rem;
-  font-size: 1.5rem;
+.App {
+  padding: 2rem;
 }
 
-th{
+header {
+  font-size: 2rem;
+}
+
+.information {
   display: flex;
-  justify-content: space-between;
+  margin-right: 8rem;
+}
+
+.information div {
+  padding: 1rem;
+  width: 25%;
+  margin-right: 0.7rem;
+  border-radius: 7px;
+}
+
+button {
+  border: 0px;
+  background-color: lightgreen;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 9.7rem;
+  right: 12rem;
+  background-color: lightgreen;
+  max-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: 1px solid black;
+}
+
+.dropdown-content span {
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content span:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+table {
+  width: 100%;
+}
+
+tr{
+  margin-left: 1rem;
+  padding: 0.6rem;
+  display: flex;
   border-bottom: 1px solid grey;
+}
+
+td ,th{
+  width: 20%;
+  text-align: center;
+}
+
+td img{
+  width: 1.5rem;
+}
+
+.changeAllocation{
+  display: flex;
+}
+
+.changeAllocation div{
+  align-items: center;
+  margin-right: 1rem;
+  background-color: lightgray;
+  padding: 0.7rem;
+  border-radius: 10px;
+}
+
+#save{
+  color: white;
+  margin-left: 1rem;
+  padding: 10px;
+  background-color: rgb(45, 45, 255);
+  border-radius: 10px;
 }
